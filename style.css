@@ -69,3 +69,24 @@ header h1 {
     margin-bottom: 30px;
 }
 
+.title-2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.hobbies-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hobbies-columns ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+    width: 45%;
+}
+
+.hobbies-columns li {
+    font-size: 1rem;
+    line-height: 1.5;
+}
