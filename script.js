@@ -16,7 +16,7 @@ function updateWordDisplay() {
         const slot = document.querySelectorAll(".letter-slot")[index];
         if (letter !== "_") {
             const img = document.createElement("img");
-            img.src = `./images/${letter.toUpperCase()}.svg`;
+            img.src = `./images/${letter.toLowerCase()}.svg`;
             img.style.display = "block";
             slot.innerHTML = "";
             slot.appendChild(img);
