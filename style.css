@@ -118,3 +118,45 @@ header h1 {
     text-align: center;
 }
 
+#controls {
+    margin: 20px 0;
+}
+
+#controls label {
+    font-size: 1.2rem;
+}
+
+#controls input {
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+#controls button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#controls #submit-btn {
+    background-color: orange;
+    color: white;
+}
+
+#controls #submit-btn:hover {
+    background-color: #ff9c33;
+}
+
+#controls #reset-btn {
+    background-color: black;
+    color: white;
+}
+
+#controls #reset-btn:hover {
+    background-color: #333;
+}
+
