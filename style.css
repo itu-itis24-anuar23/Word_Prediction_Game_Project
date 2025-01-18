@@ -160,3 +160,28 @@ header h1 {
     background-color: #333;
 }
 
+#status {
+    margin-top: 20px;
+}
+
+#status p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.heart-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: #fce4ec;
+    border-radius: 50%;
+    margin: 0 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.heart {
+    width: 24px;
+    height: 24px;
+}
