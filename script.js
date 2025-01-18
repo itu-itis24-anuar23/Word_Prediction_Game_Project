@@ -60,3 +60,9 @@ submitBtn.addEventListener("click", () => {
     const guess = guessInput.value.toUpperCase().trim(); 
     guessInput.value = ""; 
 
+    if (!guess) {
+        alert("Please enter a valid letter or word.");
+        return;
+    }
+
+ 
