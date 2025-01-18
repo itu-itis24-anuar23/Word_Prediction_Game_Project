@@ -90,3 +90,31 @@ header h1 {
     font-size: 1rem;
     line-height: 1.5;
 }
+
+#game-container {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(62, 62, 62, 0.9);
+    border-radius: 20px;
+}
+
+#word-display {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.letter-container {
+    margin: 0 10px;
+}
+
+.letter-slot {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-color: lightgray;
+    border: 2px solid black;
+    text-align: center;
+}
+
