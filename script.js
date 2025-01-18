@@ -107,4 +107,21 @@ submitBtn.addEventListener("click", () => {
         return;
     }
 
- 
+    updateWordDisplay();
+    updateHearts();
+    scoreDisplay.textContent = score;
+
+    if (!hiddenWord.includes("_")) {
+        setTimeout(() => alert("You won! Great job!"), 100);
+        submitBtn.disabled = true;
+    } else if (lives === 0) {
+        setTimeout(() => alert(`Game over! The word was ${word}.`), 100);
+        submitBtn.disabled = true;
+    }
+});
+
+resetBtn.addEventListener("click", resetGame);
+
+updateWordDisplay();
+updateHearts();
+scoreDisplay.textContent = score;
