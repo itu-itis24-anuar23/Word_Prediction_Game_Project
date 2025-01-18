@@ -80,3 +80,20 @@ submitBtn.addEventListener("click", () => {
         }
         return; 
     }
+
+    if (guess.length === 1) {
+        if (correctGuesses.includes(guess)) {
+            alert("You already guessed that letter, try another one!");
+            return;
+        }
+
+        let correctGuess = false;
+
+        word.split("").forEach((letter, index) => {
+            if (letter === guess) {
+                hiddenWord[index] = letter;
+                correctGuess = true;
+            }
+        });
+
+ 
