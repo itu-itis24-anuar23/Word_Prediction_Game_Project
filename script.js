@@ -16,7 +16,7 @@ function updateWordDisplay() {
         const slot = document.querySelectorAll(".letter-slot")[index];
         if (hiddenWord[index] !== "_") {
             const img = document.createElement("img");
-            img.src = `images\${hiddenWord[index].toUpperCase()}.svg`;
+            img.src = `/Word_Prediction_Game_Project/images/${hiddenWord[index].toUpperCase()}.svg`;
             img.alt = hiddenWord[index];
             img.style.display = "block";
             slot.innerHTML = "";
