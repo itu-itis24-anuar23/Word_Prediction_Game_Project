@@ -12,12 +12,11 @@ const scoreDisplay = document.getElementById("score");
 const livesDisplay = document.getElementById("lives");
 
 function updateWordDisplay() {
-    word.split("").forEach((letter, index) => {
+    hiddenWord.forEach((letter, index) => {
         const slot = document.querySelectorAll(".letter-slot")[index];
-        if (hiddenWord[index] !== "_") {
+        if (letter !== "_") {
             const img = document.createElement("img");
-            img.src = `./images/${hiddenWord[index].toUpperCase()}.svg`;
-            img.alt = hiddenWord[index];
+            img.src = `./images/${letter.toUpperCase()}.svg`;
             img.style.display = "block";
             slot.innerHTML = "";
             slot.appendChild(img);
