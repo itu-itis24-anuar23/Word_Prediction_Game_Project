@@ -65,4 +65,18 @@ submitBtn.addEventListener("click", () => {
         return;
     }
 
- 
+    if (guess.length > 1) {
+        if (guess === word) {
+            alert("You guessed the correct word! You win!");
+            hiddenWord = word.split(""); 
+            updateWordDisplay();
+            submitBtn.disabled = true; 
+        } else {
+            alert("Incorrect word! Game over!");
+            lives = 0;
+            updateHearts();
+            setTimeout(() => alert(`The correct word was: ${word}`), 100);
+            submitBtn.disabled = true; e
+        }
+        return; 
+    }
