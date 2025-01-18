@@ -96,4 +96,15 @@ submitBtn.addEventListener("click", () => {
             }
         });
 
+        if (correctGuess) {
+            correctGuesses.push(guess);
+            score += 20;
+        } else {
+            lives -= 1;
+        }
+    } else {
+        alert("Invalid input. Please enter a single letter or a 5-letter word.");
+        return;
+    }
+
  
